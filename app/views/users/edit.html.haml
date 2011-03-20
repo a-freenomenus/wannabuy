@@ -1,0 +1,7 @@
+%h1
+  Редактирование профиля
+
+= form_for(@user) do |f|
+  = render 'form', :f => f
+  .actions
+    = f.submit "Update"

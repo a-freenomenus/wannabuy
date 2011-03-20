@@ -1,0 +1,5 @@
+@mixin shadow-box {
+  border: 1px solid transparent;
+  @include box-shadow(#c2c2c2, 2px, 2px, 3px);
+  background: #fcfcfc;
+}

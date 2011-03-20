@@ -1,0 +1,10 @@
+#sign_up_form {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  width: 500px;
+
+  @include border-radius(5px);
+  background: #fff;
+}

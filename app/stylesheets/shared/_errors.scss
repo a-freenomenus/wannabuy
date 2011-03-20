@@ -1,0 +1,66 @@
+#error_explanation {
+  width: 400px;
+  border: 1px solid #fec5d8;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+
+  ul li {
+    font-size: 12px;
+  }
+}
+
+.field_with_errors input {
+  background: #fec5d8;
+  border: 1px solid red;
+}
+
+#flashes {
+  font-size:14px;
+  text-align:center;
+}
+
+.flash_notice {
+  background: #ebffdc;
+  border: 1px solid #d9ffbd;
+  @include border-radius(5px);
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.flash_warning {
+  background: #ffffcc;
+  border: 1px solid #cc0000;
+  @include border-radius(5px);
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #cc0000!important;
+}
+
+.flash_error {
+  background: #ffe4ed;
+  border: 1px solid #fec5d8;
+  @include border-radius(5px);
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+

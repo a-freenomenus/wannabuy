@@ -1,0 +1,22 @@
+!!!
+%html
+  = render :partial => 'layouts/includes'
+  %body
+    .main-wrapper
+      .header-wrapper
+        .header
+          = render 'shared/header'
+
+      .content-wrapper
+        .content
+          #flashes
+            - flash.each do |key, value| 
+              %div{:class => "flash_#{key}"}
+                = value
+          
+          = yield
+
+
+      .footer-wrapper
+        .footer
+          =render 'shared/footer'

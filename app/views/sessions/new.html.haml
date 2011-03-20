@@ -1,0 +1,20 @@
+%h1
+  Вход
+
+#sign_in_form
+  = form_for(:session, :url => sessions_path) do |f|
+    .field
+      = f.label :email, 'Ваш Email?'
+      %br
+      = f.text_field :email
+    .field
+      = f.label :password, 'Ваш пароль?'
+      %br
+      = f.password_field :password
+    .actions
+      = f.submit "Впустите же меня!"
+
+  %p
+    Новый пользователь? 
+    = link_to "Зарегистрируйтесь!", signup_path
+
