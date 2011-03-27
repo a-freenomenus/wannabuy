@@ -36,7 +36,7 @@
   text-align:center;
 }
 
-.flash_notice {
+.flash_notice, .flash_success {
   background: #ebffdc;
   border: 1px solid #d9ffbd;
   @include border-radius(5px);

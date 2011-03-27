@@ -1,0 +1,10 @@
+.request_list_item
+  .request_name
+    = link_to request_path(request_item) do
+      = request_item.name
+  
+  .delete 
+    = link_to 'удалить' ,'#'
+  -# .created_date
+  -#   = time_ago_in_words(request_item.created_at)
+

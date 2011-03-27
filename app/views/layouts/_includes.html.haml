@@ -2,3 +2,6 @@
   %meta{:charset => 'utf-8'}
   %title= title
   = stylesheet_link_tag 'compiled/primary.css'
+  = include_javascripts :base
+  
+  =yield :page_scripts

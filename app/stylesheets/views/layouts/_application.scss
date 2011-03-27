@@ -20,7 +20,8 @@ h1 {
 }
 
 .header-wrapper {
-  @include shadow-box;
+  // @include shadow-box;
+  border-bottom: solid 1px #ccc;
 
   a {
     text-decoration: none;
@@ -57,12 +58,30 @@ h1 {
       }
     }
   }
+
+  #wanna_buy {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+
+    a {
+      font-family: Georgia, serif;
+      font-size: 44px;
+      font-style: italic;
+      color: #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
 }
 
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
-  @include shadow-box;
+  // @include shadow-box;
 
   .content {
     margin: 10px;
@@ -74,6 +93,7 @@ h1 {
   min-height: 100px;
   // @include shadow-box;
   text-align: center;
+  border-top: solid 1px #ccc;
 
   .footer {
     margin: 30px;

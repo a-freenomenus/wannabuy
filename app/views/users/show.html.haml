@@ -1,5 +1,20 @@
+%h1
+  Профиль пользователя
+
 .profile
   .user_name
-    = @user.name
+    Имя: 
+    %span
+      = @user.name
   .created_at
-    = @user.created_at
+    Зарегистрирован:  
+    = time_ago_in_words @user.created_at
+    назад
+
+.requests
+  - if @requests.any?
+    Открытые запросы
+    = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
+  - else
+    .empty
+      Пользователь ещё не создал ни одного запроса

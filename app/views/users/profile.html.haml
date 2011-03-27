@@ -1,0 +1,51 @@
+=content_for :page_scripts do
+  = include_javascripts :users_profile
+
+  :javascript
+    $(document).ready(function(){
+      $(document).usersProfile();
+    });
+
+%ul.tabs
+  %li.all
+    = link_to 'Все', '#' 
+  %li.started
+    = link_to 'Активные', '#' 
+  %li.not-started
+    = link_to 'Не начатые', '#' 
+  %li.finished
+    = link_to 'Законченные', '#' 
+  %li.closed
+    = link_to 'Закрытые', '#' 
+
+.panes
+  .all
+    - if @requests.any?
+      = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
+    - else
+      Элементы отсутствуют
+
+  .started
+    - if @requests_group['started'].any?
+      = render :partial => 'requests/request_list_item', :collection => @requests_group['started'], :as => :request_item
+    - else
+      Элементы отсутствуют
+
+  .not-started
+    - if @requests_group['not-started'].any?
+      = render :partial => 'requests/request_list_item', :collection => @requests_group['not-started'], :as => :request_item
+    - else
+      Элементы отсутствуют
+
+  .finished
+    - if @requests_group['finished'].any?
+      = render :partial => 'requests/request_list_item', :collection => @requests_group['finished'], :as => :request_item
+    - else
+      Элементы отсутствуют
+
+  .closed
+    - if @requests_group['closed'].any?
+      = render :partial => 'requests/request_list_item', :collection => @requests_group['closed'], :as => :request_item
+    - else
+      Элементы отсутствуют
+

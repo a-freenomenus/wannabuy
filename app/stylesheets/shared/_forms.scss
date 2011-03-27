@@ -1,3 +1,5 @@
+@import 'blueprint/buttons';
+
 .field {
   margin-bottom: 20px;
 
@@ -11,5 +13,22 @@
     width: 400px;
     height: 25px;
     font-size: 18px;
+  }
+}
+
+.buttons {
+  float: none;
+  overflow: hidden;
+
+  button, input[type='button'], input[type='submit'], a.button {
+    background: #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: solid 1px #ddd;
+    @include border-radius(5px);
+
+    &:hover {
+      background: #aaa;
+    }
   }
 }

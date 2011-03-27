@@ -100,7 +100,7 @@ a img {
 }
 
 /* line 39, ../../../app/stylesheets/shared/_errors.scss */
-.flash_notice {
+.flash_notice, .flash_success {
   background: #ebffdc;
   border: 1px solid #d9ffbd;
   -moz-border-radius: 5px;
@@ -145,21 +145,66 @@ a img {
   text-align: center;
 }
 
-/* line 1, ../../../app/stylesheets/shared/_forms.scss */
+/* line 3, ../../../app/stylesheets/shared/_forms.scss */
 .field {
   margin-bottom: 20px;
 }
-/* line 4, ../../../app/stylesheets/shared/_forms.scss */
+/* line 6, ../../../app/stylesheets/shared/_forms.scss */
 .field label {
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
 }
-/* line 10, ../../../app/stylesheets/shared/_forms.scss */
+/* line 12, ../../../app/stylesheets/shared/_forms.scss */
 .field input[type=text], .field input[type=password] {
   width: 400px;
   height: 25px;
   font-size: 18px;
+}
+
+/* line 19, ../../../app/stylesheets/shared/_forms.scss */
+.buttons {
+  float: none;
+  overflow: hidden;
+}
+/* line 23, ../../../app/stylesheets/shared/_forms.scss */
+.buttons button, .buttons input[type='button'], .buttons input[type='submit'], .buttons a.button {
+  background: #ccc;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: solid 1px #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 30, ../../../app/stylesheets/shared/_forms.scss */
+.buttons button:hover, .buttons input[type='button']:hover, .buttons input[type='submit']:hover, .buttons a.button:hover {
+  background: #aaa;
+}
+
+/* line 1, ../../../app/stylesheets/shared/_navigation.scss */
+ul.tabs {
+  margin: 0 0 10px 0;
+  float: none;
+  overflow: hidden;
+}
+/* line 6, ../../../app/stylesheets/shared/_navigation.scss */
+ul.tabs li {
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 18px;
+}
+/* line 11, ../../../app/stylesheets/shared/_navigation.scss */
+ul.tabs li a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+/* line 15, ../../../app/stylesheets/shared/_navigation.scss */
+ul.tabs li a:hover, ul.tabs li a.current {
+  text-decoration: underline;
 }
 
 /* line 1, ../../../app/stylesheets/views/layouts/_application.scss */
@@ -187,74 +232,81 @@ h1 {
 
 /* line 22, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper {
-  border: 1px solid transparent;
-  -moz-box-shadow: #c2c2c2 2px 2px 3px 0;
-  -webkit-box-shadow: #c2c2c2 2px 2px 3px 0;
-  -o-box-shadow: #c2c2c2 2px 2px 3px 0;
-  box-shadow: #c2c2c2 2px 2px 3px 0;
-  background: #fcfcfc;
+  border-bottom: solid 1px #ccc;
 }
-/* line 25, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 26, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper a {
   text-decoration: none;
 }
-/* line 29, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 30, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header {
   position: relative;
 }
-/* line 32, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 33, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo {
   padding: 30px 20px;
   text-shadow: #333333 1px 1px 0;
 }
-/* line 36, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 37, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo a {
   font-size: 70px;
   color: #ccc;
 }
-/* line 43, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 44, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-/* line 48, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 49, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li {
   float: left;
   margin-left: 10px;
 }
-/* line 52, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 53, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a {
   color: #333;
 }
-/* line 54, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 55, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a:hover {
   text-decoration: underline;
 }
-
 /* line 62, ../../../app/stylesheets/views/layouts/_application.scss */
+.header-wrapper #wanna_buy {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
+.header-wrapper #wanna_buy a {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-style: italic;
+  color: #000;
+}
+/* line 73, ../../../app/stylesheets/views/layouts/_application.scss */
+.header-wrapper #wanna_buy a:hover {
+  text-decoration: underline;
+}
+
+/* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
-  border: 1px solid transparent;
-  -moz-box-shadow: #c2c2c2 2px 2px 3px 0;
-  -webkit-box-shadow: #c2c2c2 2px 2px 3px 0;
-  -o-box-shadow: #c2c2c2 2px 2px 3px 0;
-  box-shadow: #c2c2c2 2px 2px 3px 0;
-  background: #fcfcfc;
 }
-/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 86, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper .content {
   margin: 10px;
 }
 
-/* line 72, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
   text-align: center;
+  border-top: solid 1px #ccc;
 }
-/* line 78, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 98, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper .footer {
   margin: 30px;
 }
@@ -294,3 +346,41 @@ h1 {
 #sign_in_form p {
   margin-top: 30px;
 }
+
+/* line 1, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item {
+  position: relative;
+  padding: 7px 10px;
+  border-bottom: solid 1px #c0c0c0;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}
+/* line 8, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item:hover {
+  border-left: solid 5px #c0c0c0;
+  border-right: solid 5px #c0c0c0;
+  background: #f0f0f0;
+}
+/* line 15, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .request_name a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 23, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .delete {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+/* line 28, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .delete a {
+  color: #bbb;
+  font-size: 11px;
+}
+/* line 32, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .delete a:hover {
+  color: #999;
+}
+
+@import url(requests.css);

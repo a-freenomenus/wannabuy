@@ -1,0 +1,38 @@
+.request_list_item {
+  position: relative;
+  padding: 7px 10px;
+  border-bottom: solid 1px #c0c0c0;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+
+  &:hover {
+    border-left: solid 5px #c0c0c0;
+    border-right: solid 5px #c0c0c0;
+    background: #f0f0f0;
+  }
+
+  .request_name {
+    a {
+      color: #666;
+      font-size: 14px;
+      text-decoration: none;
+
+    }
+  }
+
+  .delete {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+
+    a {
+      color: #bbb;
+      font-size: 11px;
+
+      &:hover {
+        color: #999;
+      }
+    }
+  }
+}
+

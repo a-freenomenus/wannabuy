@@ -1,0 +1,8 @@
+javascripts:
+  base:
+    - public/javascripts/lib/jquery-1.5.1.js
+    - public/javascripts/lib/jquery-tools-1.2.5-tabs.js
+
+  users_profile:
+    - public/javascripts/src/users/profile.js
+    

@@ -5,6 +5,9 @@
   %ul
     %li
       = link_to 'Главная', root_path
+    %li
+      - if signed_in?
+        = link_to 'Мой профиль', profile_path
     %li  
       - if signed_in?
         = link_to 'Выйти', signout_path
@@ -12,3 +15,9 @@
         = link_to 'Войти', signin_path
     %li
       = link_to 'Помощь', '#'
+
+- if signed_in?
+  #wanna_buy
+    = link_to new_request_path do
+      %span
+        Хочу купить!

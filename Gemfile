@@ -11,6 +11,7 @@ gem 'haml', '3.0.25'
 gem 'compass', '0.10.5'
 gem 'json', '1.5.1'
 gem 'will_paginate', '3.0.pre2'
+gem 'jammit', '0.6.0'
 
 group :development do
   gem 'annotate-models', '1.0.4'

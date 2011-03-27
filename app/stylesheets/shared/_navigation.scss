@@ -1,0 +1,20 @@
+ul.tabs {
+  margin: 0 0 10px 0;
+  float: none;
+  overflow: hidden;
+
+  li {
+    float: left;
+    margin: 0 10px 0 0;
+    font-size: 18px;
+
+    a {
+      text-decoration: none;
+      color: #0f0f0f;
+
+      &:hover, &.current {
+        text-decoration: underline;
+      }
+    }
+  }
+}
