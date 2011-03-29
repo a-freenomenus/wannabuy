@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110326151600
+# Schema version: 20110327154937
 #
 # Table name: requests
 #
@@ -9,6 +9,9 @@
 #  user_id     :integer
 #  created_at  :datetime
 #  updated_at  :datetime
+#  status      :string(255)     default("not-started"), not null
+#  category_id :integer
+#  city        :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

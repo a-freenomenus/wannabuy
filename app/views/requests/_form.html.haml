@@ -8,11 +8,13 @@
   = f.label :description, 'Описание'
   = f.text_area :description
 
-Категория:
-%br
+.field
+  = f.label :category_id, 'Какая категория наиболее подходит?'
+  = f.select :category_id, nested_set_options(Category, @category) {|i| "#{'-' * i.level} #{i.name}" }
 
-Город:
-%br
+.field
+  = f.label :city, 'В каком городе?'
+  = f.text_field :city
 
-Критерии:
-%br
+-# Критерии:
+-# %br

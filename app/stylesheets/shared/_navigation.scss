@@ -18,3 +18,15 @@ ul.tabs {
     }
   }
 }
+
+.breadcrumbs ul {
+  float: none;
+  overflow: hidden;
+  padding: 5px;
+  background: #ccc;
+
+  li {
+    float: left;
+    margin-right: 5px;
+  }
+}

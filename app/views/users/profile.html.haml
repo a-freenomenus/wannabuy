@@ -1,3 +1,6 @@
+= content_for :breadcrumbs do
+  = breadcrumbs ['Главная', root_path], ['Профиль']
+
 =content_for :page_scripts do
   = include_javascripts :users_profile
 

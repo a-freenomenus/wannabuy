@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20110327154937
+#
+# Table name: categories
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  parent_id  :integer
+#  lft        :integer
+#  rgt        :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1
+
+two:
+  name: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1

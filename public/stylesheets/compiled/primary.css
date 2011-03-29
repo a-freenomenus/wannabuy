@@ -145,29 +145,39 @@ a img {
   text-align: center;
 }
 
-/* line 3, ../../../app/stylesheets/shared/_forms.scss */
+/* line 4, ../../../app/stylesheets/shared/_forms.scss */
 .field {
   margin-bottom: 20px;
 }
-/* line 6, ../../../app/stylesheets/shared/_forms.scss */
+/* line 7, ../../../app/stylesheets/shared/_forms.scss */
 .field label {
   font-size: 18px;
+  font-style: italic;
   display: block;
   margin-bottom: 5px;
 }
-/* line 12, ../../../app/stylesheets/shared/_forms.scss */
+/* line 14, ../../../app/stylesheets/shared/_forms.scss */
 .field input[type=text], .field input[type=password] {
   width: 400px;
   height: 25px;
   font-size: 18px;
 }
+/* line 20, ../../../app/stylesheets/shared/_forms.scss */
+.field textarea {
+  width: 400px;
+  height: 250px;
+}
+/* line 25, ../../../app/stylesheets/shared/_forms.scss */
+.field select {
+  width: 400px;
+}
 
-/* line 19, ../../../app/stylesheets/shared/_forms.scss */
+/* line 30, ../../../app/stylesheets/shared/_forms.scss */
 .buttons {
   float: none;
   overflow: hidden;
 }
-/* line 23, ../../../app/stylesheets/shared/_forms.scss */
+/* line 34, ../../../app/stylesheets/shared/_forms.scss */
 .buttons button, .buttons input[type='button'], .buttons input[type='submit'], .buttons a.button {
   background: #ccc;
   padding: 5px 10px;
@@ -180,7 +190,7 @@ a img {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 30, ../../../app/stylesheets/shared/_forms.scss */
+/* line 41, ../../../app/stylesheets/shared/_forms.scss */
 .buttons button:hover, .buttons input[type='button']:hover, .buttons input[type='submit']:hover, .buttons a.button:hover {
   background: #aaa;
 }
@@ -205,6 +215,19 @@ ul.tabs li a {
 /* line 15, ../../../app/stylesheets/shared/_navigation.scss */
 ul.tabs li a:hover, ul.tabs li a.current {
   text-decoration: underline;
+}
+
+/* line 22, ../../../app/stylesheets/shared/_navigation.scss */
+.breadcrumbs ul {
+  float: none;
+  overflow: hidden;
+  padding: 5px;
+  background: #ccc;
+}
+/* line 28, ../../../app/stylesheets/shared/_navigation.scss */
+.breadcrumbs ul li {
+  float: left;
+  margin-right: 5px;
 }
 
 /* line 1, ../../../app/stylesheets/views/layouts/_application.scss */

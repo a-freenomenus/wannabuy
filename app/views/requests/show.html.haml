@@ -1,3 +1,13 @@
-=@request.name
+= link_to user_path(@request.user) do
+  = @request.user.name 
+хочет купить:
+= @request.name
 %br
-=@request.description
+= simple_format @request.description
+%br
+В городе: 
+= @request.city
+%br
+Категория:
+= @request.category.name
+%br

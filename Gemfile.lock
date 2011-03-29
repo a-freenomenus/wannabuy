@@ -30,6 +30,8 @@ GEM
     activesupport (3.0.5)
     annotate-models (1.0.4)
     arel (2.0.9)
+    be9-awesome_nested_set (1.4.3)
+      activerecord (>= 3.0.0.rc)
     builder (2.1.2)
     closure-compiler (1.0.0)
     compass (0.10.5)
@@ -84,6 +86,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate-models (= 1.0.4)
+  be9-awesome_nested_set
   compass (= 0.10.5)
   faker (= 0.3.1)
   haml (= 3.0.25)

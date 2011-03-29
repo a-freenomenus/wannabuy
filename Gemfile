@@ -12,11 +12,13 @@ gem 'compass', '0.10.5'
 gem 'json', '1.5.1'
 gem 'will_paginate', '3.0.pre2'
 gem 'jammit', '0.6.0'
+gem 'be9-awesome_nested_set', :require => 'awesome_nested_set'
 
 group :development do
   gem 'annotate-models', '1.0.4'
   # gem 'rspec-rails', '2.5.0'
   gem 'faker', '0.3.1'
+  
 end
 
 # group :test do

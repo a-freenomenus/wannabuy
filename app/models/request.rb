@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110326151600
+# Schema version: 20110327154937
 #
 # Table name: requests
 #
@@ -9,12 +9,16 @@
 #  user_id     :integer
 #  created_at  :datetime
 #  updated_at  :datetime
+#  status      :string(255)     default("not-started"), not null
+#  category_id :integer
+#  city        :string(255)
 #
 
 class Request < ActiveRecord::Base
-  attr_accessible :name, :description
+  attr_accessible :name, :description, :city, :category_id
 
   belongs_to :user
+  belongs_to :category
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true

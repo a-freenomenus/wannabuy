@@ -7,6 +7,11 @@
         .header
           = render 'shared/header'
 
+      - if content_for?(:breadcrumbs)
+        .breadcrumbs-wrapper
+          =yield :breadcrumbs
+      
+
       .content-wrapper
         .content
           #flashes

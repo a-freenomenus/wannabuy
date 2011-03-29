@@ -1,0 +1,33 @@
+-first = crumbs.shift
+-last = crumbs.pop
+-unless crumbs.empty?
+  -penultimate = crumbs.pop
+
+.breadcrumbs
+  %ul
+    %li
+      =link_to first.pop, :class=>"first#{penultimate.nil? ? ' last' : ''}" do
+        %span
+          =h(first.pop)
+    %li
+      &#187; 
+    
+    -crumbs.each do |name, path| 
+      %li
+        =link_to path do
+          %span
+            =h(name)
+      %li
+        &#187; 
+    
+    -if penultimate
+      %li
+        =link_to penultimate.pop, :class=>'last' do
+          %span
+            =h(penultimate.pop)
+      %li
+        &#187; 
+
+    %li
+      =h(last.pop)
+
