@@ -221,7 +221,7 @@ ul.tabs li a:hover, ul.tabs li a.current {
 .breadcrumbs ul {
   float: none;
   overflow: hidden;
-  padding: 5px;
+  padding: 5px 10px;
   background: #ccc;
 }
 /* line 28, ../../../app/stylesheets/shared/_navigation.scss */
@@ -241,7 +241,7 @@ body {
 /* line 9, ../../../app/stylesheets/views/layouts/_application.scss */
 h1 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* line 14, ../../../app/stylesheets/views/layouts/_application.scss */
@@ -313,25 +313,55 @@ h1 {
 }
 
 /* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
+.breadcrumbs-wrapper {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #ccc;
+}
+
+/* line 86, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
+  overflow: hidden;
 }
-/* line 86, ../../../app/stylesheets/views/layouts/_application.scss */
-.content-wrapper .content {
+/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
+.content-wrapper #full-width {
   margin: 10px;
 }
 
-/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 96, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
   text-align: center;
   border-top: solid 1px #ccc;
 }
-/* line 98, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 103, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper .footer {
   margin: 30px;
+}
+
+/* line 108, ../../../app/stylesheets/views/layouts/_application.scss */
+#left-column {
+  float: left;
+  width: 200px;
+}
+
+/* line 113, ../../../app/stylesheets/views/layouts/_application.scss */
+#right-column {
+  float: left;
+  margin-left: 20px;
+  width: 760px;
+}
+
+/* line 119, ../../../app/stylesheets/views/layouts/_application.scss */
+.pagination {
+  margin: 20px;
 }
 
 /* line 1, ../../../app/stylesheets/views/users/users.scss */
@@ -348,6 +378,22 @@ h1 {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   background: #fff;
+}
+
+/* profile_navigation.html.haml */
+/* line 3, ../../../app/stylesheets/views/users/_profile_navigation.scss */
+ul.profile-navigation li {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #ccc;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #ccc;
 }
 
 /* line 1, ../../../app/stylesheets/views/sessions/sessions.scss */
@@ -368,6 +414,20 @@ h1 {
 /* line 11, ../../../app/stylesheets/views/sessions/sessions.scss */
 #sign_in_form p {
   margin-top: 30px;
+}
+
+/* line 2, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request {
+  font-size: 16px;
+}
+/* line 5, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .description, #requests_show .request .city, #requests_show .request .category {
+  margin: 10px 0;
+}
+/* line 9, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations {
+  margin: 20px 0;
+  font-size: 12px;
 }
 
 /* line 1, ../../../app/stylesheets/views/requests/_request_list_item.scss */
@@ -391,19 +451,23 @@ h1 {
   text-decoration: none;
 }
 /* line 23, ../../../app/stylesheets/views/requests/_request_list_item.scss */
-.request_list_item .delete {
+.request_list_item .manipulate {
   position: absolute;
   right: 10px;
   top: 8px;
+  overflow: hidden;
 }
-/* line 28, ../../../app/stylesheets/views/requests/_request_list_item.scss */
-.request_list_item .delete a {
+/* line 29, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .manipulate a {
   color: #bbb;
   font-size: 11px;
 }
-/* line 32, ../../../app/stylesheets/views/requests/_request_list_item.scss */
-.request_list_item .delete a:hover {
+/* line 33, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .manipulate a:hover {
   color: #999;
 }
-
-@import url(requests.css);
+/* line 38, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .manipulate .edit, .request_list_item .manipulate .delete {
+  float: left;
+  margin-right: 5px;
+}

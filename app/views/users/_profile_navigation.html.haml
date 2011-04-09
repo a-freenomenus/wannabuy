@@ -1,0 +1,9 @@
+%ul.profile-navigation
+  %li
+    = link_to_unless_current 'Мои запросы', profile_requests_path
+  %li
+    = link_to_unless_current 'Мои предложения', '#'
+  %li
+    = link_to_unless_current 'Мои комментарии', '#'
+  %li
+    = link_to_unless_current 'Редактировние профиля', edit_user_path(current_user)

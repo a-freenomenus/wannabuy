@@ -1,8 +1,9 @@
 %h1
   Регистрация
 
-#sign_up_form
-  = form_for(@user) do |f|
-    = render 'form', :f => f
-    .buttons
-      = f.submit "Зарегистрируйте меня уже!"
+#full-width
+  #sign_up_form
+    = form_for(@user) do |f|
+      = render 'form', :f => f
+      .buttons
+        = f.submit "Зарегистрируйте меня уже!"

@@ -1,13 +1,43 @@
-= link_to user_path(@request.user) do
-  = @request.user.name 
-хочет купить:
-= @request.name
-%br
-= simple_format @request.description
-%br
-В городе: 
-= @request.city
-%br
-Категория:
-= @request.category.name
-%br
+= content_for :breadcrumbs do
+  = breadcrumbs ['Главная', root_path], ['Запросы', requests_path], [@request.name]
+
+#full-width
+  .request
+    %span.user
+      = link_to @request.user.name, user_path(@request.user)
+    хочет купить:
+    %span.name
+      = @request.name
+    %br
+
+    .description
+      = simple_format @request.description
+
+    - if @request.city
+      .city
+        В городе: 
+        = @request.city
+
+    - if @request.category 
+      .categoty
+        Категория:
+        = @request.category.name
+
+    - if @request.user == current_user || current_user.admin?
+      .manipulations
+        Вы можете
+        = link_to 'отредактировать', edit_request_path
+        или
+        = link_to 'удалить' ,'#'
+        этот запрос
+    
+    Предложить товар:
+    %br
+    = form_for(@response, :url => response_new_path(@request)) do |f|
+      = f.label :description, 'Описание'
+      %br
+      = f.text_area :description
+      %br
+
+      =f.submit
+

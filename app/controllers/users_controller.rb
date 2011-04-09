@@ -37,6 +37,9 @@ class UsersController < ApplicationController
 
   def profile
     @title = 'Мой профиль'
+  end
+
+  def requests
     @requests = current_user.requests
     @requests_group = @requests.group_by{|el| el.status}
   end
@@ -63,15 +66,15 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
   
-  # private
+  private
   #   def authenticate
   #     deny_access unless signed_in?
   #   end
   #   
-  #   def correct_user
-  #     @user = User.find(params[:id])
-  #     redirect_to(root_path) unless current_user?(@user)
-  #   end
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end
 
   #   def admin_user
   #     redirect_to(root_path) unless current_user.admin?

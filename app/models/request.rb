@@ -15,10 +15,11 @@
 #
 
 class Request < ActiveRecord::Base
-  attr_accessible :name, :description, :city, :category_id
+  attr_accessible :name, :description, :city, :category_id, :status
 
   belongs_to :user
   belongs_to :category
+  has_many :responses
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true

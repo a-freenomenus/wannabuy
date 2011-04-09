@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110327154937) do
+ActiveRecord::Schema.define(:version => 20110402190613) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,17 @@ ActiveRecord::Schema.define(:version => 20110327154937) do
 
   add_index "requests", ["category_id"], :name => "index_requests_on_category_id"
   add_index "requests", ["user_id"], :name => "index_requests_on_user_id"
+
+  create_table "responses", :force => true do |t|
+    t.string   "description"
+    t.integer  "user_id"
+    t.integer  "request_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "responses", ["request_id"], :name => "index_responses_on_request_id"
+  add_index "responses", ["user_id"], :name => "index_responses_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"

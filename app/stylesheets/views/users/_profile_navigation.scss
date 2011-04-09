@@ -1,0 +1,11 @@
+/* profile_navigation.html.haml */
+ul.profile-navigation {
+  li {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ccc;
+    @include border-radius(0 0 5px 5px);
+    border: 1px solid #ccc;
+  }
+}

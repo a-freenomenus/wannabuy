@@ -1,7 +1,7 @@
 !!!
 %html
   = render :partial => 'layouts/includes'
-  %body
+  %body{ :id => params[:controller].parameterize('_') + '_' + params[:action]}
     .main-wrapper
       .header-wrapper
         .header
@@ -13,13 +13,12 @@
       
 
       .content-wrapper
-        .content
-          #flashes
-            - flash.each do |key, value| 
-              %div{:class => "flash_#{key}"}
-                = value
-          
-          = yield
+        #flashes
+          - flash.each do |key, value| 
+            %div{:class => "flash_#{key}"}
+              = value
+        
+        = yield
 
 
       .footer-wrapper

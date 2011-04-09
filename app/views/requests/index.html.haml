@@ -1,0 +1,9 @@
+= content_for :breadcrumbs do
+  = breadcrumbs ['Главная', root_path], ['Открытые запросы']
+
+#full-width
+  - if @requests.any?
+    = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
+    = will_paginate
+  - else
+    Элементы отсутствуют
