@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110402190613) do
+ActiveRecord::Schema.define(:version => 20110410113147) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(:version => 20110402190613) do
     t.integer  "request_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "price",       :limit => 5
+    t.boolean  "torg",                     :default => false
   end
 
   add_index "responses", ["request_id"], :name => "index_responses_on_request_id"

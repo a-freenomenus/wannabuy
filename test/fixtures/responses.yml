@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110402190613
+# Schema version: 20110410113147
 #
 # Table name: responses
 #
@@ -9,6 +9,8 @@
 #  request_id  :integer
 #  created_at  :datetime
 #  updated_at  :datetime
+#  price       :string(5)
+#  torg        :boolean
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

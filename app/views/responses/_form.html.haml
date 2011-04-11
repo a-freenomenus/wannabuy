@@ -1,0 +1,18 @@
+#response_add_form
+  = form_for(response, :url => response_new_path(request)) do |f|
+    = render 'shared/error_messages', :object => f.object
+
+    .field
+      = f.label :description, 'Добавить предложение'
+      = f.text_area :description
+
+    .field
+      = f.label :price, 'Цена (в у.е.)'
+      = f.text_field :price
+
+    .field
+      = f.label :torg, 'Торг'
+      = f.check_box :torg
+
+    .buttons
+      =f.submit 'Добавить'

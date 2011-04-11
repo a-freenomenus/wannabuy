@@ -1,21 +1,39 @@
+= content_for :breadcrumbs do
+  = breadcrumbs ['Главная', root_path], ['Пользователи', users_path], ['Профиль пользователя ' + @user.name ]
+
+=content_for :page_scripts do
+  = include_javascripts :users_show
+
+  :javascript
+    $(document).ready(function(){
+      $(document).usersShow();
+    });
+
 %h1
   Профиль пользователя
+  = @user.name
 
 #full-width
   .profile
-    .user_name
-      Имя: 
-      %span
-        = @user.name
     .created_at
       Зарегистрирован:  
       = time_ago_in_words @user.created_at
       назад
 
-  .requests
-    - if @requests.any?
-      Открытые запросы
-      = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
-    - else
+  %ul.tabs
+    %li.requests
+      = link_to 'Открытые запросы', '#'
+    %li.responses
+      = link_to 'Предложения', '#'
+
+
+  .panes
+    .requests
+      - if @requests.any?
+        = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
+      - else
+        .empty
+          Пользователь ещё не создал ни одного запроса
+    .responses
       .empty
-        Пользователь ещё не создал ни одного запроса
+        Пользователь ничего не предложил

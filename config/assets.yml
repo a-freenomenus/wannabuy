@@ -5,4 +5,9 @@ javascripts:
 
   users_profile:
     - public/javascripts/src/users/profile.js
+
+  users_show:
+    - public/javascripts/src/users/show.js
     
+  requests_show:
+    - public/javascripts/src/requests/show.js

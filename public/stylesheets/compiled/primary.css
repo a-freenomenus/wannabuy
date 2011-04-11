@@ -1,4 +1,4 @@
-/* line 14, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -245,6 +245,22 @@ h1 {
 }
 
 /* line 14, ../../../app/stylesheets/views/layouts/_application.scss */
+h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 19, ../../../app/stylesheets/views/layouts/_application.scss */
+a {
+  color: #000;
+  text-decoration: underline;
+}
+/* line 23, ../../../app/stylesheets/views/layouts/_application.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 28, ../../../app/stylesheets/views/layouts/_application.scss */
 .main-wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -253,66 +269,66 @@ h1 {
   background: #fff;
 }
 
-/* line 22, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 36, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper {
   border-bottom: solid 1px #ccc;
 }
-/* line 26, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 40, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper a {
   text-decoration: none;
 }
-/* line 30, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 44, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header {
   position: relative;
 }
-/* line 33, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 47, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo {
   padding: 30px 20px;
   text-shadow: #333333 1px 1px 0;
 }
-/* line 37, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 51, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo a {
   font-size: 70px;
   color: #ccc;
 }
-/* line 44, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 58, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-/* line 49, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 63, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li {
   float: left;
   margin-left: 10px;
 }
-/* line 53, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a {
   color: #333;
 }
-/* line 55, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 69, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a:hover {
   text-decoration: underline;
 }
-/* line 62, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 76, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy {
   position: absolute;
   top: 50px;
   right: 200px;
 }
-/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a {
   font-family: Georgia, serif;
   font-size: 44px;
   font-style: italic;
   color: #000;
 }
-/* line 73, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 87, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a:hover {
   text-decoration: underline;
 }
 
-/* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 95, ../../../app/stylesheets/views/layouts/_application.scss */
 .breadcrumbs-wrapper {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -323,43 +339,43 @@ h1 {
   border: 1px solid #ccc;
 }
 
-/* line 86, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 100, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
   overflow: hidden;
 }
-/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 105, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper #full-width {
   margin: 10px;
 }
 
-/* line 96, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 110, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
   text-align: center;
   border-top: solid 1px #ccc;
 }
-/* line 103, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 117, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper .footer {
   margin: 30px;
 }
 
-/* line 108, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 122, ../../../app/stylesheets/views/layouts/_application.scss */
 #left-column {
   float: left;
   width: 200px;
 }
 
-/* line 113, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 127, ../../../app/stylesheets/views/layouts/_application.scss */
 #right-column {
   float: left;
   margin-left: 20px;
   width: 760px;
 }
 
-/* line 119, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 133, ../../../app/stylesheets/views/layouts/_application.scss */
 .pagination {
   margin: 20px;
 }
@@ -378,6 +394,11 @@ h1 {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   background: #fff;
+}
+
+/* line 13, ../../../app/stylesheets/views/users/users.scss */
+#users_show .profile {
+  margin: 10px 0;
 }
 
 /* profile_navigation.html.haml */
@@ -417,17 +438,44 @@ ul.profile-navigation li {
 }
 
 /* line 2, ../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request {
+#requests_show .request, #responses_create .request {
   font-size: 16px;
 }
 /* line 5, ../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request .description, #requests_show .request .city, #requests_show .request .category {
-  margin: 10px 0;
+#requests_show .request .items_wrapper, #responses_create .request .items_wrapper {
+  margin-bottom: 20px;
 }
 /* line 9, ../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request .manipulations {
+#requests_show .request .description, #requests_show .request .city, #requests_show .request .category, #responses_create .request .description, #responses_create .request .city, #responses_create .request .category {
+  margin: 10px 0;
+}
+/* line 13, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations, #responses_create .request .manipulations {
   margin: 20px 0;
-  font-size: 12px;
+  font-size: 11px;
+}
+/* line 17, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations a, #requests_show .request .manipulations input[type=submit], #responses_create .request .manipulations a, #responses_create .request .manipulations input[type=submit] {
+  color: #bbb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 22, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations a:hover, #requests_show .request .manipulations input[type=submit]:hover, #responses_create .request .manipulations a:hover, #responses_create .request .manipulations input[type=submit]:hover {
+  color: #999;
+}
+/* line 27, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations form, #responses_create .request .manipulations form {
+  display: inline;
+}
+/* line 30, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations form input[type=submit], #responses_create .request .manipulations form input[type=submit] {
+  border: none;
+  background: none;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 /* line 1, ../../../app/stylesheets/views/requests/_request_list_item.scss */
@@ -461,13 +509,97 @@ ul.profile-navigation li {
 .request_list_item .manipulate a {
   color: #bbb;
   font-size: 11px;
+  line-height: 15px;
 }
-/* line 33, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+/* line 34, ../../../app/stylesheets/views/requests/_request_list_item.scss */
 .request_list_item .manipulate a:hover {
   color: #999;
 }
-/* line 38, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+/* line 39, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .manipulate input[type=submit] {
+  border: none;
+  background: none;
+  font-size: 11px;
+  line-height: 14px;
+  color: #bbb;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+/* line 50, ../../../app/stylesheets/views/requests/_request_list_item.scss */
+.request_list_item .manipulate input[type=submit]:hover {
+  color: #999;
+}
+/* line 55, ../../../app/stylesheets/views/requests/_request_list_item.scss */
 .request_list_item .manipulate .edit, .request_list_item .manipulate .delete {
   float: left;
   margin-right: 5px;
+}
+
+/* line 1, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item {
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+/* line 9, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .user_name {
+  float: left;
+}
+/* line 14, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .manipulate input[type=submit] {
+  border: none;
+  background: none;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bbb;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+/* line 25, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .manipulate input[type=submit]:hover {
+  color: #999;
+}
+/* line 30, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .right {
+  position: absolute;
+  right: 15px;
+}
+/* line 34, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .right .manipulate, .response_list_item .right .time {
+  float: left;
+}
+/* line 39, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .time {
+  font-style: italic;
+  line-height: 17px;
+  margin-left: 5px;
+}
+/* line 45, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+.response_list_item .response_description {
+  float: none;
+  margin: 5px;
+}
+
+/* line 1, ../../../app/stylesheets/views/responses/_response_add_form.scss */
+#response_add_form {
+  margin-left: 20px;
+}
+/* line 5, ../../../app/stylesheets/views/responses/_response_add_form.scss */
+#response_add_form .field label {
+  font-size: 12px;
+  font-style: normal;
+}
+/* line 10, ../../../app/stylesheets/views/responses/_response_add_form.scss */
+#response_add_form .field label[for=response_torg] {
+  display: inline;
+}
+/* line 14, ../../../app/stylesheets/views/responses/_response_add_form.scss */
+#response_add_form .field textarea {
+  height: 100px;
 }

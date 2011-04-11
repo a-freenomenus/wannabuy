@@ -1,6 +1,14 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Запросы', requests_path], [@request.name]
 
+=content_for :page_scripts do
+  = include_javascripts :requests_show
+
+  :javascript
+    $(document).ready(function(){
+      $(document).requestsShow();
+    });
+
 #full-width
   .request
     %span.user
@@ -13,31 +21,44 @@
     .description
       = simple_format @request.description
 
-    - if @request.city
+    - if @request.city && @request.city != ''
       .city
         В городе: 
         = @request.city
 
     - if @request.category 
-      .categoty
+      .category
         Категория:
         = @request.category.name
 
-    - if @request.user == current_user || current_user.admin?
+    - if signed_in? && (@request.user == current_user || current_user.admin?)
       .manipulations
         Вы можете
-        = link_to 'отредактировать', edit_request_path
+        = link_to 'отредактировать', edit_request_path(@request)
         или
-        = link_to 'удалить' ,'#'
+        = form_tag @request, :method => :delete, :confirm => 'Вы уверены?' do 
+          = submit_tag 'удалить'
         этот запрос
-    
-    Предложить товар:
-    %br
-    = form_for(@response, :url => response_new_path(@request)) do |f|
-      = f.label :description, 'Описание'
-      %br
-      = f.text_area :description
-      %br
 
-      =f.submit
+    %ul.tabs
+      %li.responses
+        = link_to 'Предложения', '#'
+      %li.comments
+        = link_to 'Комментарии', '#'
+
+    .panes
+      .responses
+        .items_wrapper
+          - if @request.responses.any?
+            = render :partial => 'responses/response_list_item', :collection => @request.responses, :as => :response_item
+
+          - else
+            Предложений не поступало
+
+        - if signed_in? && @request.user != current_user
+          = render :partial => 'responses/form', :locals => {:request => @request, :response => @response}
+
+      .comments
+        Комментарии отсутствуют
+
 

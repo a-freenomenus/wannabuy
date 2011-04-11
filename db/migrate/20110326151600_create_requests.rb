@@ -2,7 +2,7 @@ class CreateRequests < ActiveRecord::Migration
   def self.up
     create_table :requests do |t|
       t.string :name
-      t.string :description
+      t.text :description
       t.integer :user_id
 
       t.timestamps
