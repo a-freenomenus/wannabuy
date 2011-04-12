@@ -3,6 +3,11 @@ ul.profile-navigation {
   li {
     display: block;
     padding: 10px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    background: #fff;
+
+    &:hover {
+      background: #f3f3f3;
+    }
   }
 }

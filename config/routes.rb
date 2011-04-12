@@ -12,6 +12,7 @@ Wannabuy::Application.routes.draw do
 
   match '/profile', :to => 'users#profile'
   match '/profile/requests', :to => 'users#requests'
+  match '/profile/responses', :to => 'users#responses'
 
   match '/requests/:request_id/responses/new', :to => 'responses#create', :as => :response_new, :via => :post
 

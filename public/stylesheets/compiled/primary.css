@@ -1,4 +1,4 @@
-/* line 14, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.8.7-p334@rails3/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -222,9 +222,8 @@ ul.tabs li a:hover, ul.tabs li a.current {
   float: none;
   overflow: hidden;
   padding: 5px 10px;
-  background: #ccc;
 }
-/* line 28, ../../../app/stylesheets/shared/_navigation.scss */
+/* line 27, ../../../app/stylesheets/shared/_navigation.scss */
 .breadcrumbs ul li {
   float: left;
   margin-right: 5px;
@@ -232,7 +231,7 @@ ul.tabs li a:hover, ul.tabs li a.current {
 
 /* line 1, ../../../app/stylesheets/views/layouts/_application.scss */
 body {
-  background: white url(/images/grey_bg.png);
+  background: #cccccc url(/images/grey_bg.png);
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-size: 12px;
@@ -268,118 +267,62 @@ a:hover {
   min-height: 600px;
 }
 
-<<<<<<< HEAD
-/* line 21, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper {
-  border-bottom: solid 1px #ccc;
-}
-/* line 24, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 36, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper a {
   text-decoration: none;
-}
-/* line 28, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper .header {
-  position: relative;
-}
-/* line 31, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 36, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper {
-  border-bottom: solid 1px #ccc;
 }
 /* line 40, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper a {
-  text-decoration: none;
-}
-/* line 44, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header {
   position: relative;
 }
-/* line 47, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 43, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo {
   padding: 30px 20px;
   text-shadow: #333333 1px 1px 0;
 }
-<<<<<<< HEAD
-/* line 35, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 51, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 47, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo a {
   font-size: 70px;
   color: #ccc;
 }
-<<<<<<< HEAD
-/* line 42, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 58, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 54, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-<<<<<<< HEAD
-/* line 47, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 63, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 59, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li {
   float: left;
   margin-left: 10px;
 }
-<<<<<<< HEAD
-/* line 51, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 63, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a {
   color: #333;
 }
-/* line 53, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 65, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a:hover {
   text-decoration: underline;
 }
-/* line 60, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper .user-links li a {
-  color: #333;
-}
-/* line 69, ../../../app/stylesheets/views/layouts/_application.scss */
-.header-wrapper .user-links li a:hover {
-  text-decoration: underline;
-}
-/* line 76, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 72, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy {
   position: absolute;
   top: 50px;
   right: 200px;
 }
-<<<<<<< HEAD
-/* line 65, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 77, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a {
   font-family: Georgia, serif;
   font-size: 44px;
   font-style: italic;
   color: #000;
 }
-<<<<<<< HEAD
-/* line 71, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 87, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 83, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a:hover {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
-/* line 79, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 95, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
 .breadcrumbs-wrapper {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -388,102 +331,72 @@ a:hover {
   -khtml-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
   border: 1px solid #ccc;
+  background: #fff;
 }
 
-<<<<<<< HEAD
-/* line 84, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 97, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper {
-  margin-top: 20px;
+  margin-top: 10px;
   min-height: 300px;
 }
 
-/* line 89, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 100, ../../../app/stylesheets/views/layouts/_application.scss */
-.content-wrapper {
-  margin-top: 20px;
-  min-height: 300px;
-  overflow: hidden;
-}
-/* line 105, ../../../app/stylesheets/views/layouts/_application.scss */
-.content-wrapper #full-width {
-  margin: 10px;
-}
-
-/* line 110, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 102, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
   text-align: center;
   border-top: solid 1px #ccc;
 }
-<<<<<<< HEAD
-/* line 96, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 117, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 108, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper .footer {
   margin: 30px;
 }
 
-<<<<<<< HEAD
-/* line 101, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 113, ../../../app/stylesheets/views/layouts/_application.scss */
 #full-width {
   padding: 20px;
   position: relative;
 }
-/* line 105, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 117, ../../../app/stylesheets/views/layouts/_application.scss */
 #full-width:before, #full-width:after {
-  max-width: 380px;
+  max-width: 480px;
 }
 
-/* line 110, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
 /* line 122, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
 #left-column {
   float: left;
   width: 200px;
   position: relative;
 }
 
-<<<<<<< HEAD
-/* line 116, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 127, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 128, ../../../app/stylesheets/views/layouts/_application.scss */
 #right-column {
   position: relative;
   margin-left: 210px;
-  width: 760px;
+  width: 767px;
   padding: 10px;
 }
-/* line 122, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 134, ../../../app/stylesheets/views/layouts/_application.scss */
 #right-column:before, #right-column:after {
   max-width: 380px;
 }
 
-<<<<<<< HEAD
-/* line 127, ../../../app/stylesheets/views/layouts/_application.scss */
-=======
-/* line 133, ../../../app/stylesheets/views/layouts/_application.scss */
->>>>>>> 2b073f56d218a40d0bdfaa6d240eda81c025755a
+/* line 139, ../../../app/stylesheets/views/layouts/_application.scss */
 .pagination {
   margin: 20px;
 }
 
-/* line 131, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 143, ../../../app/stylesheets/views/layouts/_application.scss */
 .clear {
   clear: both;
 }
 
-/* line 135, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 147, ../../../app/stylesheets/views/layouts/_application.scss */
 .border {
   background: #fff;
   border: 1px solid #ccc;
 }
-/* line 139, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 151, ../../../app/stylesheets/views/layouts/_application.scss */
 .border:before, .border:after {
   -moz-box-shadow: #cccccc 0 15px 20px 0;
   -webkit-box-shadow: #cccccc 0 15px 20px 0;
@@ -502,7 +415,7 @@ a:hover {
   height: 20%;
   content: "";
 }
-/* line 152, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 164, ../../../app/stylesheets/views/layouts/_application.scss */
 .border:after {
   -moz-transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
@@ -538,7 +451,12 @@ a:hover {
 ul.profile-navigation li {
   display: block;
   padding: 10px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  background: #fff;
+}
+/* line 9, ../../../app/stylesheets/views/users/_profile_navigation.scss */
+ul.profile-navigation li:hover {
+  background: #f3f3f3;
 }
 
 /* line 1, ../../../app/stylesheets/views/sessions/sessions.scss */
@@ -574,25 +492,31 @@ ul.profile-navigation li {
   margin: 10px 0;
 }
 /* line 13, ../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .description, #responses_create .request .description {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+/* line 19, ../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations, #responses_create .request .manipulations {
   margin: 20px 0;
   font-size: 11px;
 }
-/* line 17, ../../../app/stylesheets/views/requests/requests.scss */
+/* line 23, ../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations a, #requests_show .request .manipulations input[type=submit], #responses_create .request .manipulations a, #responses_create .request .manipulations input[type=submit] {
   color: #bbb;
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 22, ../../../app/stylesheets/views/requests/requests.scss */
+/* line 28, ../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations a:hover, #requests_show .request .manipulations input[type=submit]:hover, #responses_create .request .manipulations a:hover, #responses_create .request .manipulations input[type=submit]:hover {
   color: #999;
 }
-/* line 27, ../../../app/stylesheets/views/requests/requests.scss */
+/* line 33, ../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations form, #responses_create .request .manipulations form {
   display: inline;
 }
-/* line 30, ../../../app/stylesheets/views/requests/requests.scss */
+/* line 36, ../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations form input[type=submit], #responses_create .request .manipulations form input[type=submit] {
   border: none;
   background: none;
@@ -614,7 +538,7 @@ ul.profile-navigation li {
 .request_list_item:hover {
   border-left: solid 5px #c0c0c0;
   border-right: solid 5px #c0c0c0;
-  background: #f0f0f0;
+  background: #f3f3f3;
 }
 /* line 15, ../../../app/stylesheets/views/requests/_request_list_item.scss */
 .request_list_item .request_name a {
@@ -668,12 +592,16 @@ ul.profile-navigation li {
   padding: 10px;
   position: relative;
   border: 1px solid #ccc;
+  -moz-box-shadow: #cccccc 0 0 5px 0;
+  -webkit-box-shadow: #cccccc 0 0 5px 0;
+  -o-box-shadow: #cccccc 0 0 5px 0;
+  box-shadow: #cccccc 0 0 5px 0;
 }
-/* line 9, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 10, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .user_name {
   float: left;
 }
-/* line 14, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 15, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .manipulate input[type=submit] {
   border: none;
   background: none;
@@ -685,29 +613,29 @@ ul.profile-navigation li {
   margin: 0;
   cursor: pointer;
 }
-/* line 25, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 26, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .manipulate input[type=submit]:hover {
   color: #999;
 }
-/* line 30, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 31, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .right {
   position: absolute;
   right: 15px;
 }
-/* line 34, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 35, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .right .manipulate, .response_list_item .right .time {
   float: left;
 }
-/* line 39, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 40, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .time {
   font-style: italic;
   line-height: 17px;
   margin-left: 5px;
 }
-/* line 45, ../../../app/stylesheets/views/responses/_response_list_item.scss */
+/* line 46, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item .response_description {
   float: none;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* line 1, ../../../app/stylesheets/views/responses/_response_add_form.scss */

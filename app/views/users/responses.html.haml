@@ -1,0 +1,20 @@
+= content_for :breadcrumbs do
+  = breadcrumbs ['Главная', root_path], ['Профиль', profile_path], ['Мои предложения']
+
+-# =content_for :page_scripts do
+-#   = include_javascripts :users_profile
+-# 
+-#   :javascript
+-#     $(document).ready(function(){
+-#       $(document).usersProfile();
+-#     });
+
+#left-column.border
+  = render :partial => 'users/profile_navigation'
+
+#right-column.border
+  - if @responses.any?
+    = render :partial => 'responses/response_list_item', :collection => @responses, :as => :response_item
+  - else
+    Здесь ничего нет. Пусто вообще
+

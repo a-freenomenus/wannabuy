@@ -11,25 +11,31 @@
   margin: 10px 0;
 }
 /* line 13, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .description, #responses_create .request .description {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+/* line 19, ../../../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations, #responses_create .request .manipulations {
   margin: 20px 0;
   font-size: 11px;
 }
-/* line 17, ../../../../../app/stylesheets/views/requests/requests.scss */
+/* line 23, ../../../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations a, #requests_show .request .manipulations input[type=submit], #responses_create .request .manipulations a, #responses_create .request .manipulations input[type=submit] {
   color: #bbb;
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 22, ../../../../../app/stylesheets/views/requests/requests.scss */
+/* line 28, ../../../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations a:hover, #requests_show .request .manipulations input[type=submit]:hover, #responses_create .request .manipulations a:hover, #responses_create .request .manipulations input[type=submit]:hover {
   color: #999;
 }
-/* line 27, ../../../../../app/stylesheets/views/requests/requests.scss */
+/* line 33, ../../../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations form, #responses_create .request .manipulations form {
   display: inline;
 }
-/* line 30, ../../../../../app/stylesheets/views/requests/requests.scss */
+/* line 36, ../../../../../app/stylesheets/views/requests/requests.scss */
 #requests_show .request .manipulations form input[type=submit], #responses_create .request .manipulations form input[type=submit] {
   border: none;
   background: none;

@@ -44,6 +44,10 @@ class UsersController < ApplicationController
     @requests_group = @requests.group_by{|el| el.status}
   end
 
+  def responses
+    @responses = current_user.responses
+  end
+
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])

@@ -1,5 +1,5 @@
 body {
-  background: #fff url(/images/grey_bg.png);
+  background: #ccc url(/images/grey_bg.png);
   text-align: center;
 
   font-family: Helvetica, sans-serif;
@@ -33,8 +33,6 @@ a {
 }
 
 .header-wrapper {
-  border-bottom: solid 1px #ccc;
-
   a {
     text-decoration: none;
   }
@@ -93,17 +91,17 @@ a {
 .breadcrumbs-wrapper {
   @include border-radius(0 0 5px 5px );
   border: 1px solid #ccc;
+  background: #fff;
 }
 
 .content-wrapper {
-  margin-top: 20px;
+  margin-top: 10px;
   min-height: 300px;
 }
 
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
-  // @include shadow-box;
   text-align: center;
   border-top: solid 1px #ccc;
 
@@ -117,7 +115,7 @@ a {
   position: relative;
 
   &:before, &:after {
-    max-width: 380px
+    max-width: 480px
   }
 }
 
@@ -130,7 +128,7 @@ a {
 #right-column {
   position: relative;
   margin-left: 210px;
-  width: 760px;
+  width: 767px;
   padding: 10px;
 
   &:before, &:after {

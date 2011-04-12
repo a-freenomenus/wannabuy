@@ -5,6 +5,7 @@
   position: relative;
 
   border: 1px solid #ccc;
+  @include box-shadow(#ccc, 0, 0, 5px, 0);
 
   .user_name {
     float: left;
@@ -44,7 +45,7 @@
 
   .response_description {
     float: none;
-    margin: 5px;
+    margin: 10px;
   }
 
 }

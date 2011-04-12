@@ -1,7 +1,6 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Запросы', requests_path], [@request.name]
 
-#full-width.border
 =content_for :page_scripts do
   = include_javascripts :requests_show
 
@@ -10,6 +9,7 @@
       $(document).requestsShow();
     });
 
+#full-width.border
   .request
     %span.user
       = link_to @request.user.name, user_path(@request.user)
