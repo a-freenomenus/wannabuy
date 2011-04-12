@@ -1,7 +1,7 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Мои запросы', profile_requests_path], [@request.name]
 
-#full-width
+#full-width.border
   #request_edit_form
     = form_for(@request) do |f|
       = render 'form', :f => f

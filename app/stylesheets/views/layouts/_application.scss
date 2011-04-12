@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #fff url(/images/grey_bg.png);
   text-align: center;
 
   font-family: Helvetica, sans-serif;
@@ -16,11 +16,9 @@ h1 {
   margin: 0 auto;
   text-align: left;
   min-height: 600px;
-  background: #fff;
 }
 
 .header-wrapper {
-  // @include shadow-box;
   border-bottom: solid 1px #ccc;
 
   a {
@@ -86,11 +84,6 @@ h1 {
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
-  overflow: hidden;
-
-  #full-width {
-    margin: 10px;
-  }
 }
 
 .footer-wrapper {
@@ -105,17 +98,60 @@ h1 {
   }
 }
 
+#full-width {
+  padding: 20px;
+  position: relative;
+
+  &:before, &:after {
+    max-width: 380px
+  }
+}
+
 #left-column {
   float: left;
   width: 200px;
+  position: relative;
 }
 
 #right-column {
-  float: left;
-  margin-left: 20px;
+  position: relative;
+  margin-left: 210px;
   width: 760px;
+  padding: 10px;
+
+  &:before, &:after {
+    max-width: 380px
+  }
 }
 
 .pagination {
   margin: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.border {
+  background: #fff;
+  border: 1px solid #ccc;
+
+  &:before, &:after {
+    @include box-shadow(#ccc, 0, 15px, 20px, 0);
+    @include rotate(-3deg);
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    z-index: -1;
+    width: 50%;
+    max-width: 100px;
+    height: 20%;
+    content: "";
+  } 
+
+  &:after {
+    @include rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
 }

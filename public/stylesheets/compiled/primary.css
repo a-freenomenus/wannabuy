@@ -232,7 +232,7 @@ ul.tabs li a:hover, ul.tabs li a.current {
 
 /* line 1, ../../../app/stylesheets/views/layouts/_application.scss */
 body {
-  background: #fff;
+  background: white url(/images/grey_bg.png);
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-size: 12px;
@@ -250,69 +250,68 @@ h1 {
   margin: 0 auto;
   text-align: left;
   min-height: 600px;
-  background: #fff;
 }
 
-/* line 22, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 21, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper {
   border-bottom: solid 1px #ccc;
 }
-/* line 26, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 24, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper a {
   text-decoration: none;
 }
-/* line 30, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 28, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header {
   position: relative;
 }
-/* line 33, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 31, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo {
   padding: 30px 20px;
   text-shadow: #333333 1px 1px 0;
 }
-/* line 37, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 35, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .header .logo a {
   font-size: 70px;
   color: #ccc;
 }
-/* line 44, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 42, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-/* line 49, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 47, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li {
   float: left;
   margin-left: 10px;
 }
-/* line 53, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 51, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a {
   color: #333;
 }
-/* line 55, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 53, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper .user-links li a:hover {
   text-decoration: underline;
 }
-/* line 62, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 60, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy {
   position: absolute;
   top: 50px;
   right: 200px;
 }
-/* line 67, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 65, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a {
   font-family: Georgia, serif;
   font-size: 44px;
   font-style: italic;
   color: #000;
 }
-/* line 73, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 71, ../../../app/stylesheets/views/layouts/_application.scss */
 .header-wrapper #wanna_buy a:hover {
   text-decoration: underline;
 }
 
-/* line 81, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 79, ../../../app/stylesheets/views/layouts/_application.scss */
 .breadcrumbs-wrapper {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -323,45 +322,95 @@ h1 {
   border: 1px solid #ccc;
 }
 
-/* line 86, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 84, ../../../app/stylesheets/views/layouts/_application.scss */
 .content-wrapper {
   margin-top: 20px;
   min-height: 300px;
-  overflow: hidden;
-}
-/* line 91, ../../../app/stylesheets/views/layouts/_application.scss */
-.content-wrapper #full-width {
-  margin: 10px;
 }
 
-/* line 96, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 89, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper {
   margin-top: 20px;
   min-height: 100px;
   text-align: center;
   border-top: solid 1px #ccc;
 }
-/* line 103, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 96, ../../../app/stylesheets/views/layouts/_application.scss */
 .footer-wrapper .footer {
   margin: 30px;
 }
 
-/* line 108, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 101, ../../../app/stylesheets/views/layouts/_application.scss */
+#full-width {
+  padding: 20px;
+  position: relative;
+}
+/* line 105, ../../../app/stylesheets/views/layouts/_application.scss */
+#full-width:before, #full-width:after {
+  max-width: 380px;
+}
+
+/* line 110, ../../../app/stylesheets/views/layouts/_application.scss */
 #left-column {
   float: left;
   width: 200px;
+  position: relative;
 }
 
-/* line 113, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 116, ../../../app/stylesheets/views/layouts/_application.scss */
 #right-column {
-  float: left;
-  margin-left: 20px;
+  position: relative;
+  margin-left: 210px;
   width: 760px;
+  padding: 10px;
+}
+/* line 122, ../../../app/stylesheets/views/layouts/_application.scss */
+#right-column:before, #right-column:after {
+  max-width: 380px;
 }
 
-/* line 119, ../../../app/stylesheets/views/layouts/_application.scss */
+/* line 127, ../../../app/stylesheets/views/layouts/_application.scss */
 .pagination {
   margin: 20px;
+}
+
+/* line 131, ../../../app/stylesheets/views/layouts/_application.scss */
+.clear {
+  clear: both;
+}
+
+/* line 135, ../../../app/stylesheets/views/layouts/_application.scss */
+.border {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+/* line 139, ../../../app/stylesheets/views/layouts/_application.scss */
+.border:before, .border:after {
+  -moz-box-shadow: #cccccc 0 15px 20px 0;
+  -webkit-box-shadow: #cccccc 0 15px 20px 0;
+  -o-box-shadow: #cccccc 0 15px 20px 0;
+  box-shadow: #cccccc 0 15px 20px 0;
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  z-index: -1;
+  width: 50%;
+  max-width: 100px;
+  height: 20%;
+  content: "";
+}
+/* line 152, ../../../app/stylesheets/views/layouts/_application.scss */
+.border:after {
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
 
 /* line 1, ../../../app/stylesheets/views/users/users.scss */
@@ -386,14 +435,6 @@ ul.profile-navigation li {
   display: block;
   padding: 10px;
   margin-bottom: 10px;
-  background: #ccc;
-  -moz-border-radius: 0 0 5px 5px;
-  -webkit-border-radius: 0 0 5px 5px;
-  -o-border-radius: 0 0 5px 5px;
-  -ms-border-radius: 0 0 5px 5px;
-  -khtml-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-  border: 1px solid #ccc;
 }
 
 /* line 1, ../../../app/stylesheets/views/sessions/sessions.scss */

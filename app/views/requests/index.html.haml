@@ -1,7 +1,7 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Открытые запросы']
 
-#full-width
+#full-width.border
   - if @requests.any?
     = render :partial => 'requests/request_list_item', :collection => @requests, :as => :request_item
     = will_paginate

@@ -1,7 +1,7 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Запросы', requests_path], [@request.name]
 
-#full-width
+#full-width.border
   .request
     %span.user
       = link_to @request.user.name, user_path(@request.user)

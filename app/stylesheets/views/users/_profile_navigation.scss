@@ -4,8 +4,5 @@ ul.profile-navigation {
     display: block;
     padding: 10px;
     margin-bottom: 10px;
-    background: #ccc;
-    @include border-radius(0 0 5px 5px);
-    border: 1px solid #ccc;
   }
 }
