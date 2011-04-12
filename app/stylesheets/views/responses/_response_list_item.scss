@@ -1,0 +1,50 @@
+.response_list_item {
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative;
+
+  border: 1px solid #ccc;
+
+  .user_name {
+    float: left;
+  }
+
+  .manipulate {
+    input[type=submit] {
+      border: none;
+      background: none;
+      font-size: 12px;
+      line-height: 14px;
+      color: #bbb;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+
+      &:hover {
+        color: #999;
+      }
+    }
+  }
+  .right {
+    position: absolute;
+    right: 15px;
+
+    .manipulate, .time {
+      float: left;
+    }
+  }
+
+  .time {
+    font-style: italic;
+    line-height: 17px;
+    margin-left: 5px;
+  }
+
+  .response_description {
+    float: none;
+    margin: 5px;
+  }
+
+}

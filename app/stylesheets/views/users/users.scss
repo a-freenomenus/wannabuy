@@ -8,3 +8,9 @@
   @include border-radius(5px);
   background: #fff;
 }
+
+#users_show {
+  .profile {
+    margin: 10px 0;
+  }
+}

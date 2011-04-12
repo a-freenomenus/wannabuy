@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
   before_filter :authenticate,  :only => [:new, :edit, :create, :update]
-  before_filter :correct_user,  :only => [:edit, :update]
+  before_filter :correct_user,  :only => [:edit, :update, :destroy]
 
   def index
     @title = 'Открытые запросы'
@@ -35,6 +35,13 @@ class RequestsController < ApplicationController
       @title = "Редактирование запроса"
       render 'edit'
     end
+  end
+
+  def destroy
+    @request = Request.find(params[:id])
+    @request.destroy
+    flash[:success] = 'Запрос удалён'
+    redirect_to requests_path
   end
 
   def show

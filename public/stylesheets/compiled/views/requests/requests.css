@@ -1,13 +1,40 @@
 /* line 2, ../../../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request {
+#requests_show .request, #responses_create .request {
   font-size: 16px;
 }
 /* line 5, ../../../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request .description, #requests_show .request .city, #requests_show .request .category {
-  margin: 10px 0;
+#requests_show .request .items_wrapper, #responses_create .request .items_wrapper {
+  margin-bottom: 20px;
 }
 /* line 9, ../../../../../app/stylesheets/views/requests/requests.scss */
-#requests_show .request .manipulations {
+#requests_show .request .description, #requests_show .request .city, #requests_show .request .category, #responses_create .request .description, #responses_create .request .city, #responses_create .request .category {
+  margin: 10px 0;
+}
+/* line 13, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations, #responses_create .request .manipulations {
   margin: 20px 0;
-  font-size: 12px;
+  font-size: 11px;
+}
+/* line 17, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations a, #requests_show .request .manipulations input[type=submit], #responses_create .request .manipulations a, #responses_create .request .manipulations input[type=submit] {
+  color: #bbb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 22, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations a:hover, #requests_show .request .manipulations input[type=submit]:hover, #responses_create .request .manipulations a:hover, #responses_create .request .manipulations input[type=submit]:hover {
+  color: #999;
+}
+/* line 27, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations form, #responses_create .request .manipulations form {
+  display: inline;
+}
+/* line 30, ../../../../../app/stylesheets/views/requests/requests.scss */
+#requests_show .request .manipulations form input[type=submit], #responses_create .request .manipulations form input[type=submit] {
+  border: none;
+  background: none;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
 }

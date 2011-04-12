@@ -1,0 +1,26 @@
+.response_list_item
+  .user_name
+    От: 
+    = link_to response_item.user.name, user_path(response_item.user)
+
+  .right
+    - if signed_in? && (response_item.user == current_user || current_user.admin?)
+      .manipulate
+        = form_tag response_item, :method => :delete, :confirm => 'Вы уверены?' do 
+          = submit_tag 'Удалить'
+
+    .time
+      (#{time_ago_in_words(response_item.updated_at)})
+  %br{:clear => 'all'} 
+  
+  .response_description
+    = response_item.description
+
+  .response_price
+    Цена: 
+    = response_item.price
+    у.е.
+    - if response_item.torg?
+      %span.torg
+        Торг
+

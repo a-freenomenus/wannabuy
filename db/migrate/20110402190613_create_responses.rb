@@ -1,7 +1,7 @@
 class CreateResponses < ActiveRecord::Migration
   def self.up
     create_table :responses do |t|
-      t.string :description
+      t.text :description
       t.integer :user_id
       t.integer :request_id
 
