@@ -46,6 +46,7 @@ class RequestsController < ApplicationController
 
   def show
     @request = Request.find(params[:id])
+    @title = @request.name
     @response = @request.responses.new(:request_id => params[:id])
   end
 

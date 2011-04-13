@@ -3,13 +3,13 @@
     = link_to request_path(request_item) do
       = request_item.name
   
-  - if signed_in? && (current_user?(request_item.user) || current_user.admin?)
-    .manipulate 
-      .edit
-        = link_to 'редактировать', edit_request_path(request_item)
-      .delete 
-        = form_tag request_item, :method => :delete, :confirm => 'Вы уверены?' do 
-          = submit_tag 'удалить'
+  -# - if signed_in? && (current_user?(request_item.user) || current_user.admin?)
+  -#   .manipulate 
+  -#     .edit
+  -#       = link_to 'редактировать', edit_request_path(request_item)
+  -#     .delete 
+  -#       = form_tag request_item, :method => :delete, :confirm => 'Вы уверены?' do 
+  -#         = submit_tag 'удалить'
   -# .created_date
   -#   = time_ago_in_words(request_item.created_at)
 
