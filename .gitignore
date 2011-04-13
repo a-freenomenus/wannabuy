@@ -7,3 +7,4 @@ doc/
 *~
 .DS_Store
 .sass-cache/
+public/stylesheets/compiled/

@@ -88,9 +88,9 @@ a img {
 }
 
 /* line 29, ../../../app/stylesheets/shared/_errors.scss */
-.field_with_errors input {
-  background: #fec5d8;
-  border: 1px solid red;
+.field_with_errors input, .field_with_errors textarea {
+  background: #FFE4ED;
+  border: solid 1px red;
 }
 
 /* line 34, ../../../app/stylesheets/shared/_errors.scss */

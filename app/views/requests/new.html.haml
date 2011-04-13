@@ -1,11 +1,23 @@
 = content_for :breadcrumbs do
   = breadcrumbs ['Главная', root_path], ['Мои запросы', profile_requests_path], ['Новый запрос']
 
+= content_for :page_scripts do
+  = include_javascripts :requests_new
+
+  :javascript
+    $(document).ready(function() {
+      $(document).requestsNew();
+    });
+
 #full-width.border
   #request_new_form
     = form_for(@request) do |f|
       = render 'form', :f => f
       
+      = link_to 'Добавить критерий', '#', :id => 'add_criteria', 'data-n' => '0'
+      %br
+      %br
+
       %ul.buttons
         %li
           =f.submit "Сохранить"

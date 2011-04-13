@@ -11,3 +11,6 @@ javascripts:
     
   requests_show:
     - public/javascripts/src/requests/show.js
+
+  requests_new:
+    - public/javascripts/src/requests/new.js

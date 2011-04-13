@@ -3,11 +3,11 @@
 %br
 .field
   = f.label :name, 'Я хочу купить'
-  = f.text_field :name
+  = f.text_field :name, :class => 'required'
 
 .field
   = f.label :description, 'Описание'
-  = f.text_area :description
+  = f.text_area :description, :class => 'required'
 
 .field
   = f.label :category_id, 'Какая категория наиболее подходит?'
