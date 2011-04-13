@@ -6,6 +6,7 @@
   width: 500px;
 
   @include border-radius(5px);
+  @include box-shadow(#ccc, 0, 0, 15px, 0);
   background: #fff;
 }
 

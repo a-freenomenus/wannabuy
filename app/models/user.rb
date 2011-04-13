@@ -50,6 +50,10 @@ class User < ActiveRecord::Base
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
   end
+
+  def responses
+    responses = Response.where('user_id = ?', self.id)
+  end
   
   private
     def encrypt_password

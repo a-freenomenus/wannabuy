@@ -5,7 +5,7 @@ class ResponsesController < ApplicationController
                                       :price => params[:response][:price],
                                       :torg  => params[:response][:torg]) 
 
-    @response.user_id = current_user
+    @response.user_id = current_user.id
     if @response.save
       flash[:notice] = 'Ваше предложение принято'
       redirect_to request_path(@request)

@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @requests = @user.requests.where('status = ?', 'started')
+    @responses = @user.responses
     @title = 'Профиль пользователя ' + @user.name
   end
 

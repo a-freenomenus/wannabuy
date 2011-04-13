@@ -9,10 +9,6 @@
       $(document).usersShow();
     });
 
-%h1
-  Профиль пользователя
-  = @user.name
-
 #full-width.border
   .profile
     .created_at
@@ -35,5 +31,9 @@
         .empty
           Пользователь ещё не создал ни одного запроса
     .responses
-      .empty
-        Пользователь ничего не предложил
+      - if @responses.any?
+        - p @responses 
+        = render :partial => 'responses/response_list_item', :collection => @responses, :as => :response_item
+      - else
+        .empty
+          Пользователь ничего не предложил
