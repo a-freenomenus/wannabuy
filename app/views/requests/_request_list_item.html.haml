@@ -3,6 +3,11 @@
     = link_to request_path(request_item) do
       = request_item.name
   
+  - if signed_in? && (current_user?(request_item.user) || current_user.admin?)
+    .manipulate 
+      .delete 
+        = form_tag request_item, :method => :delete, :confirm => 'Вы уверены?' do 
+          = submit_tag 'x'
   -# - if signed_in? && (current_user?(request_item.user) || current_user.admin?)
   -#   .manipulate 
   -#     .edit

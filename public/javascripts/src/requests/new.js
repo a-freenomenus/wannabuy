@@ -70,6 +70,7 @@
       });
     }
     
+    // TODO: MOVE THIS FUNCTIONALITY TO PLUGIN
     /* Validate required fields */
     function valid() {
       var valid = true;
