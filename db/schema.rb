@@ -10,13 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110410113147) do
+ActiveRecord::Schema.define(:version => 20110417150413) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.integer  "parent_id"
     t.integer  "lft"
     t.integer  "rgt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "criterions", :force => true do |t|
+    t.string   "name"
+    t.integer  "request_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -59,5 +66,12 @@ ActiveRecord::Schema.define(:version => 20110410113147) do
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+
+  create_table "values", :force => true do |t|
+    t.string   "name"
+    t.integer  "criterion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

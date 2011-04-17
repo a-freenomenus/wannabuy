@@ -20,6 +20,7 @@ class Request < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   has_many :responses
+  has_many :criterions
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true

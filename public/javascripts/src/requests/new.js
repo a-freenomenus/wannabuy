@@ -5,12 +5,12 @@
     // PRIVATE VARIABLES
 
     var $mainContainer = $element,
-        $addCriteria,
+        $addCriterion,
         $form;
 
     // constructor
     function init() {
-      $addCriteria = $('#add_criteria', $mainContainer);  
+      $addCriterion = $('#add_criterion', $mainContainer);  
       $form = $('#new_request', $mainContainer);
 
       bindDomEvents();
@@ -19,8 +19,8 @@
     // PRIVATE METHODS
 
     function bindDomEvents() {
-      /* Add new criteria link */
-      $addCriteria.bind('click', function(e) {
+      /* Add new criterion link */
+      $addCriterion.bind('click', function(e) {
         e.preventDefault();
         
         if (!valid()) {
@@ -32,22 +32,43 @@
             data_n = parseInt($this.attr('data-n')) + 1;
 
         if ((data_n >= 1) && (data_n <= max_fields)) {
-          var field_id = 'criteria_' + data_n;
+          var field_id = 'criterion_' + data_n;
 
           /* Create DOM-elements */
-          var $criteriaField = $('<div>').attr({ class : 'field'});
+          var $criterionField = $('<div>').attr({ class : 'field'});
           var $label = $('<label>').attr({ for : 'request_' + field_id }).text('Параметр');
           var $input = $('<input>').attr({ 
                 id    : 'request_' + field_id, 
-                name  : 'request[' + field_id + ']', 
+                name  : 'request[criterion][' + data_n + '][name]', 
+                class : 'criterion',
                 size  : 30,
                 type  : 'text'
           });
 
+          var $value_label = $('<label>').attr({ for : 'request_value_' + data_n }).text('Значение');
+          var $value_input = $('<input>').attr({ 
+                id    : 'request_value_' + data_n, 
+                name  : 'request[criterion][' + data_n + '][values][1]', 
+                class : 'criterion_value',
+                size  : 30,
+                type  : 'text'
+          });
+          
+          var $value_add = $('<a>').attr({ 
+            href : '#', 
+            id : 'value_add', 
+            'data-n' : 1,
+            'data-cr' : data_n  
+          }).text('Добавить значение');
+
           /* Append elements to DOM */
-          $label.appendTo($criteriaField);
-          $input.appendTo($criteriaField);
-          $criteriaField.insertBefore($this);
+          $label.appendTo($criterionField);
+          $input.appendTo($criterionField);
+
+          $value_label.appendTo($criterionField);
+          $value_input.appendTo($criterionField);
+          $value_add.appendTo($criterionField);
+          $criterionField.insertBefore($this);
           
           /* Increase data-value */
           if (data_n < max_fields) {
@@ -56,6 +77,28 @@
             $this.remove()
           }
         } 
+      });
+
+      $('#value_add').live('click', function(e) {
+        e.preventDefault();
+
+        var $this = $(this),
+            data_cr = parseInt($this.attr('data-cr')),
+            data_n = parseInt($this.attr('data-n')) + 1;
+
+        var $value_label = $('<label>').attr({ for : 'request_value_' + data_n }).text('Значение');
+        var $value_input = $('<input>').attr({ 
+              id    : 'request_value_' + data_n, 
+              name  : 'request[criterion][' + data_cr + '][values][' + data_n + ']', 
+              class : 'criterion_value',
+              size  : 30,
+              type  : 'text'
+        });
+
+        $value_label.insertBefore($this);
+        $value_input.insertBefore($this);
+        $this.attr('data-n', data_n);
+
       });
 
       /* Submit button */
@@ -84,13 +127,14 @@
         }
       });
 
-      if (valid) {
-        $('#flashes').text('').removeClass('flash_error');
-        return true;
-      } else {
-        $('#flashes').text('Заполните обязательные поля!').addClass('flash_error');
-        return false;
-      }
+      return true;
+      // if (valid) {
+      //   $('#flashes').text('').removeClass('flash_error');
+      //   return true;
+      // } else {
+      //   $('#flashes').text('Заполните обязательные поля!').addClass('flash_error');
+      //   return false;
+      // }
     }
 
     // run constructor

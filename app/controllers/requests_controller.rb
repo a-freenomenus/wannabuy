@@ -18,6 +18,7 @@ class RequestsController < ApplicationController
 
   def create
     @request  = current_user.requests.build(params[:request])
+    p params[:request]
     if @request.save
       flash[:success] = "Ваш запрос создан!"
       redirect_to request_path(@request)
