@@ -15,12 +15,14 @@
 #
 
 class Request < ActiveRecord::Base
-  attr_accessible :name, :description, :city, :category_id, :status
+  attr_accessible :name, :description, :city, :category_id, :status, :criterions_attributes
 
   belongs_to :user
   belongs_to :category
   has_many :responses
   has_many :criterions
+  
+  accepts_nested_attributes_for :criterions, :allow_destroy => true
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true

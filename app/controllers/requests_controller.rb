@@ -9,6 +9,7 @@ class RequestsController < ApplicationController
 
   def new
     @request = Request.new
+    @request.criterions.build.values.build
   end
   
   def edit
@@ -17,34 +18,34 @@ class RequestsController < ApplicationController
   end
 
   def create
-    @request  = current_user.requests.build(params[:request])
+    @request  = current_user.requests.new(params[:request])
 
     if @request.save
-      unless params[:request][:criterion].nil?
-        params[:request][:criterion].each do |key, criterion|
-          unless criterion[:values].nil? 
-            @values_empty = true
-            criterion[:values].each do |key, value|
-              if value != ''
-                @values_empty = false
-              end
-            end
+      # unless params[:request][:criterion].nil?
+      #   params[:request][:criterion].each do |key, criterion|
+      #     unless criterion[:values].nil? 
+      #       @values_empty = true
+      #       criterion[:values].each do |key, value|
+      #         if value != ''
+      #           @values_empty = false
+      #         end
+      #       end
 
-            # accept_nested_attributes_for
-            unless @values_empty
-              @criterion = Criterion.new(:name => criterion[:name])
-              @criterion.request_id = @request.id
-              @criterion.save
+      #       # accept_nested_attributes_for
+      #       unless @values_empty
+      #         @criterion = Criterion.new(:name => criterion[:name])
+      #         @criterion.request_id = @request.id
+      #         @criterion.save
 
-              criterion[:values].select { |k,v| !v.blank? }.each do |key, value|
-                @value = Value.new(:name => value)
-                @value.criterion_id = @criterion.id
-                @value.save
-              end
-            end
-          end
-        end
-      end
+      #         criterion[:values].select { |k,v| !v.blank? }.each do |key, value|
+      #           @value = Value.new(:name => value)
+      #           @value.criterion_id = @criterion.id
+      #           @value.save
+      #         end
+      #       end
+      #     end
+      #   end
+      # end
 
       flash[:success] = "Ваш запрос создан!"
       redirect_to request_path(@request)

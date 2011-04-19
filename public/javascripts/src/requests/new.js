@@ -39,7 +39,7 @@
           var $label = $('<label>').attr({ for : 'request_' + field_id }).text('Параметр');
           var $input = $('<input>').attr({ 
                 id    : 'request_' + field_id, 
-                name  : 'request[criterion][' + data_n + '][name]', 
+                name  : 'request[criterions_attributes][' + data_n + '][name]', 
                 class : 'criterion',
                 size  : 30,
                 type  : 'text'
@@ -48,7 +48,7 @@
           var $value_label = $('<label>').attr({ for : 'request_value_' + data_n }).text('Значение');
           var $value_input = $('<input>').attr({ 
                 id    : 'request_value_' + data_n, 
-                name  : 'request[criterion][' + data_n + '][values][1]', 
+                name  : 'request[criterions_attributes][' + data_n + '][values_attributes][1][name]', 
                 class : 'criterion_value',
                 size  : 30,
                 type  : 'text'
@@ -89,7 +89,7 @@
         var $value_label = $('<label>').attr({ for : 'request_value_' + data_n }).text('Значение');
         var $value_input = $('<input>').attr({ 
               id    : 'request_value_' + data_n, 
-              name  : 'request[criterion][' + data_cr + '][values][' + data_n + ']', 
+              name  : 'request[criterions_attributes][' + data_cr + '][values_attributes][' + data_n + '][name]', 
               class : 'criterion_value',
               size  : 30,
               type  : 'text'
