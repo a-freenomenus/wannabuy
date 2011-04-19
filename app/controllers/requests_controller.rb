@@ -30,17 +30,16 @@ class RequestsController < ApplicationController
               end
             end
 
+            # accept_nested_attributes_for
             unless @values_empty
               @criterion = Criterion.new(:name => criterion[:name])
               @criterion.request_id = @request.id
               @criterion.save
 
-              criterion[:values].each do |key, value|
-                if value != ''
-                  @value = Value.new(:name => value)
-                  @value.criterion_id = @criterion.id
-                  @value.save
-                end
+              criterion[:values].select { |k,v| !v.blank? }.each do |key, value|
+                @value = Value.new(:name => value)
+                @value.criterion_id = @criterion.id
+                @value.save
               end
             end
           end
