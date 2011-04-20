@@ -127,14 +127,14 @@
         }
       });
 
-      return true;
-      // if (valid) {
-      //   $('#flashes').text('').removeClass('flash_error');
-      //   return true;
-      // } else {
-      //   $('#flashes').text('Заполните обязательные поля!').addClass('flash_error');
-      //   return false;
-      // }
+      /* return true; */
+      if (valid) {
+        $('#flashes').text('').removeClass('flash_error');
+        return true;
+      } else {
+        $('#flashes').text('Заполните обязательные поля!').addClass('flash_error');
+        return false;
+      }
     }
 
     // run constructor

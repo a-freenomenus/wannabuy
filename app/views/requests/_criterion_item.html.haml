@@ -1,0 +1,7 @@
+.criterion_item
+  .name
+    = criterion_item.name
+  .values
+    = raw(criterion_item.values.map{ |value| content_tag(:span, value.name) }.join(' или '))
+      
+

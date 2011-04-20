@@ -1,0 +1,14 @@
+.criterion_item {
+  margin-top: 5px;
+
+  .name {
+    margin: 0 10px;
+  }
+  .values {
+    margin: 0 15px;
+
+    span {
+      text-decoration: underline;
+    } 
+  }
+}

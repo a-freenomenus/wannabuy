@@ -593,6 +593,23 @@ ul.profile-navigation li:hover {
   margin-right: 5px;
 }
 
+/* line 1, ../../../app/stylesheets/views/requests/_criterion_item.scss */
+.criterion_item {
+  margin-top: 5px;
+}
+/* line 4, ../../../app/stylesheets/views/requests/_criterion_item.scss */
+.criterion_item .name {
+  margin: 0 10px;
+}
+/* line 7, ../../../app/stylesheets/views/requests/_criterion_item.scss */
+.criterion_item .values {
+  margin: 0 15px;
+}
+/* line 10, ../../../app/stylesheets/views/requests/_criterion_item.scss */
+.criterion_item .values span {
+  text-decoration: underline;
+}
+
 /* line 1, ../../../app/stylesheets/views/responses/_response_list_item.scss */
 .response_list_item {
   font-size: 12px;

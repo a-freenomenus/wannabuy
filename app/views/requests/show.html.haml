@@ -31,6 +31,11 @@
         Категория:
         = @request.category.name
 
+    - if @request.criterions
+      .criterions
+        Критерии:
+        = render :partial => 'requests/criterion_item', :collection => @request.criterions, :as => :criterion_item
+
     - if signed_in? && (@request.user == current_user || current_user.admin?)
       .manipulations
         Вы можете
