@@ -1,14 +1,14 @@
 # == Schema Information
 # Schema version: 20110501132657
 #
-# Table name: comments
+# Table name: ratings
 #
-#  id         :integer         not null, primary key
-#  text       :text
-#  user_id    :integer
-#  request_id :integer
-#  created_at :datetime
-#  updated_at :datetime
+#  id          :integer         not null, primary key
+#  value       :integer
+#  response_id :integer
+#  user_id     :integer
+#  created_at  :datetime
+#  updated_at  :datetime
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

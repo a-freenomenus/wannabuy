@@ -1,3 +1,16 @@
+# == Schema Information
+# Schema version: 20110501132657
+#
+# Table name: comments
+#
+#  id         :integer         not null, primary key
+#  text       :text
+#  user_id    :integer
+#  request_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class Comment < ActiveRecord::Base
   attr_accessible :text
 

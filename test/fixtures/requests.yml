@@ -1,17 +1,17 @@
 # == Schema Information
-# Schema version: 20110327154937
+# Schema version: 20110501132657
 #
 # Table name: requests
 #
 #  id          :integer         not null, primary key
 #  name        :string(255)
-#  description :string(255)
+#  description :text
 #  user_id     :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #  status      :string(255)     default("not-started"), not null
 #  category_id :integer
-#  city        :string(255)
+#  city        :string(15)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

@@ -1,10 +1,10 @@
 # == Schema Information
-# Schema version: 20110410113147
+# Schema version: 20110501132657
 #
 # Table name: responses
 #
 #  id          :integer         not null, primary key
-#  description :string(255)
+#  description :text
 #  user_id     :integer
 #  request_id  :integer
 #  created_at  :datetime
