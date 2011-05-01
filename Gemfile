@@ -5,8 +5,9 @@ gem 'rails', '3.0.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
+gem 'sqlite3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'mysql2', '0.2.6'
 gem 'haml', '3.0.25'
 gem 'compass', '0.10.5'
 gem 'json', '1.5.1'
@@ -18,7 +19,7 @@ group :development do
   gem 'annotate-models', '1.0.4'
   # gem 'rspec-rails', '2.5.0'
   gem 'faker', '0.3.1'
-  
+  gem 'railroady'
 end
 
 # group :test do

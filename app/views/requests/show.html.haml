@@ -31,7 +31,7 @@
         Категория:
         = @request.category.name
 
-    - if @request.criterions
+    - unless @request.criterions.blank?
       .criterions
         Критерии:
         = render :partial => 'requests/criterion_item', :collection => @request.criterions, :as => :criterion_item
@@ -64,5 +64,12 @@
           = render :partial => 'responses/form', :locals => {:request => @request, :response => @response}
 
       .comments
-        Комментарии отсутствуют
+        .items_wrapper
+          - if @request.comments.any?
+            = render :partial => 'comments/comment_item', :collection => @request.comments, :as => :comment
+          - else
+            Комментарии отсутствуют
+
+        - if signed_in? && @request.user != current_user
+          = render :partial => 'comments/form', :locals => {:request => @request, :comment => @comment}
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110417150413) do
+ActiveRecord::Schema.define(:version => 20110501123436) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,17 @@ ActiveRecord::Schema.define(:version => 20110417150413) do
     t.datetime "updated_at"
   end
 
+  create_table "comments", :force => true do |t|
+    t.text     "text"
+    t.integer  "user_id"
+    t.integer  "request_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["request_id"], :name => "index_comments_on_request_id"
+  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
+
   create_table "criterions", :force => true do |t|
     t.string   "name"
     t.integer  "request_id"
@@ -30,20 +41,20 @@ ActiveRecord::Schema.define(:version => 20110417150413) do
 
   create_table "requests", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status",      :default => "not-started", :null => false
+    t.string   "status",                    :default => "not-started", :null => false
     t.integer  "category_id"
-    t.string   "city"
+    t.string   "city",        :limit => 15
   end
 
   add_index "requests", ["category_id"], :name => "index_requests_on_category_id"
   add_index "requests", ["user_id"], :name => "index_requests_on_user_id"
 
   create_table "responses", :force => true do |t|
-    t.string   "description"
+    t.text     "description"
     t.integer  "user_id"
     t.integer  "request_id"
     t.datetime "created_at"

@@ -5,6 +5,7 @@ Wannabuy::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   resources :requests
   resources :responses, :only => [:create, :destroy]
+  resources :comments, :only  => [:create, :destroy]
 
   match '/signup', :to => 'users#new'
   match '/signin', :to => 'sessions#new'
@@ -15,6 +16,7 @@ Wannabuy::Application.routes.draw do
   match '/profile/responses', :to => 'users#responses'
 
   match '/requests/:request_id/responses/new', :to => 'responses#create', :as => :response_new, :via => :post
+  match '/requests/:request_id/comments/new',  :to => 'comments#create', :as => :comment_new, :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

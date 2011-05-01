@@ -1,0 +1,10 @@
+#comment_add_form
+  = form_for(comment, :url => comment_new_path(request)) do |f|
+    = render 'shared/error_messages', :object => f.object
+
+    .field
+      = f.label :text, 'Добавить комментарий'
+      = f.text_area :text
+
+    .buttons
+      =f.submit 'Добавить'

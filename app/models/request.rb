@@ -21,10 +21,12 @@ class Request < ActiveRecord::Base
   belongs_to :category
   has_many :responses
   has_many :criterions
+  has_many :comments
   
   accepts_nested_attributes_for :criterions, 
     :allow_destroy => true, 
     :reject_if => proc { |attrs| p attrs; attrs['name'].blank? }
+
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true

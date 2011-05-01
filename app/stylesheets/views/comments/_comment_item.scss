@@ -1,0 +1,17 @@
+.comment {
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative;
+
+  border: 1px solid #ccc;
+  @include box-shadow(#ccc, 0, 0, 5px, 0);
+
+  .user_name {
+  }
+
+  .text {
+    float: none;
+    margin: 10px;
+  }
+}
