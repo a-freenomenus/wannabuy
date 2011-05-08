@@ -7,7 +7,7 @@ gem 'rails', '3.0.6'
 
 gem 'sqlite3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'mysql2', '0.2.6'
+gem 'mysql2', '0.2.6'
 gem 'haml', '3.0.25'
 gem 'compass', '0.10.5'
 gem 'json', '1.5.1'

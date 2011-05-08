@@ -55,6 +55,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mysql2 (0.2.6)
     open4 (1.0.1)
     polyglot (0.3.1)
     rack (1.2.2)
@@ -99,6 +100,7 @@ DEPENDENCIES
   haml (= 3.0.25)
   jammit (= 0.6.0)
   json (= 1.5.1)
+  mysql2 (= 0.2.6)
   railroady
   rails (= 3.0.6)
   sqlite3
